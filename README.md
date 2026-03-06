@@ -18,7 +18,7 @@ Based on the official project requirements, the following features have been imp
 
 #Technical Stack
 - HTML5 & CSS3: Layout designed with Flexbox and Grid. Includes Google Fonts integration.
-- JavaScript (Vanilla):** Logic handled without any external frameworks, using DOM manipulation for all game states.
+- JavaScript (Vanilla): Logic handled without any external frameworks, using DOM manipulation for all game states.
 - Web Storage API: Used for session-persistent High Score tracking.
 
 *Bilkent University - Department of Computer Technology and Information Systems (CTIS)*
