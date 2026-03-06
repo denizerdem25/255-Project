@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CTIS255 Project - Black Tile Game</title>
+ <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.4/dist/confetti.browser.min.js"></script>
+ <link rel="stylesheet" href="style.css">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <section id="cover" aria-label="Cover Page">
+    
+    <div id="membersContainer" role="group" aria-label="Project Members Container">
+  
+      <h1 id="projectTitle">Project Members</h1>
+
+      <article class="member" data-member="1">
+    <img width="240px" id="member1Photo" src="assets/beril.jpg" alt="Member 1 Photo" />
+   <div class="memberInfo">
+    <h2 class="memberName">Özüm Beril Kılıç</h2> 
+    <h4 class="memberSec">Section: 03</h4>
+    <h4 class="memberId">ID: 22302277</h4>
+  </div>
+  </article>
+
+  <article class="member" data-member="2">
+    <img width="240px" id="member2Photo" src="assets/gulnihal.jpg" alt="Member 2 Photo" />
+    <div class="memberInfo">
+    <h2 class="memberName">Gülnihal Aydoğdu</h2>
+    <h4 class="memberSec">Section: 02</h4>
+    <h4 class="memberId">ID: 22301734</h4></div>
+  </article>
+
+  <article class="member" data-member="3">
+    <img width="240px" id="member3Photo" src="assets/deniz.jpg" alt="Member 3 Photo" />
+    <div class="memberInfo">
+    <h2 class="memberName">Deniz Erdem</h2>
+    <h4 class="memberSec">Section: 03</h4>
+    <h4 class="memberId">ID: 22401705</h4></div>
+  </article>
+</div>
+
+      
+    </div>
+
+    <p id="coverHint">Click anywhere to start</p>
+  </section>
+
+  <section id="countdown" class="hidden" aria-label="Countdown">
+    <div id="countNumber">3</div>
+  </section>
+
+  <main id="game" class="hidden" aria-label="Game Screen">
+
+    <header id="topBar" aria-label="Scoreboard">
+      <div class="stat">
+        <span class="label">High Score</span>
+        <span id="hiScore" class="value">0</span>
+      </div>
+
+      <div class="stat">
+        <span class="label">Current Score</span>
+       <span id="score" class="value">0</span>
+
+      </div>
+
+      <div class="stat">
+        <span class="label">Timer</span>
+        <span id="time" class="value">10</span>
+      </div>
+    </header>
+
+
+    <section id="boardArea" aria-label="4x4 Game Board Area">
+
+      <div id="tapIntro">Tap the black tiles!</div>
+      
+      <div id="overlayMessage" aria-live="polite"></div>
+
+     
+      <div id="board" role="grid" aria-label="4x4 grid">
+      </div>
+
+    </section>
+
+  <div id="time-bar-container">
+  <div id="time-bar"></div>
+</div>
+
+
+    <footer id="bottomArea" aria-label="End Message Area">
+      <div id="endText"></div>
+      <div id="refreshHint"></div>
+      <h3 id="heartbeat">Press F5 to play again</h3>
+    </footer>
+
+  </main>
+
+ 
+ <script src="script.js"></script>
+</body>
+</html>
